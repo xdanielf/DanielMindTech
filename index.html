@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html class="wide wow-animation" lang="en">
+
+<head>
+  <title>DanielMindTech</title>
+  <meta name="format-detection" content="telephone=no">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta charset="utf-8">
+  <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Libre+Franklin:200,300,500,600,300italic">
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <link rel="stylesheet" href="css/style.css">
+  <style>
+    .swiper-slide-video {position:relative;overflow:hidden;height:100vh}
+    .swiper-slide-video video {position:absolute;top:0;left:0;width:100%;height:100%;object-fit:cover}
+    .swiper-slide-caption {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        background: linear-gradient(to top, rgba(255, 255, 255, 0.6) 0%, rgba(255,255,255,0.4) 50%, transparent 100%); /* Semi-transparent white background */
+        color: #000; /* Black text color */
+        padding: 6rem 0;
+        text-align: center;
+    }
+    .swiper-slide-caption h1, .swiper-slide-caption h2, .swiper-slide-caption h3, .swiper-slide-caption h5 {
+        text-shadow: none; /* Remove text shadow */
+    }
+
+    /* Add padding around the text for better readability */
+    .swiper-slide-caption .container {
+        padding: 2rem; /* Adjust as needed */
+    }
+    .swiper-slide-caption h1 {font-size:4rem;font-weight:700;margin-bottom:1rem;text-shadow:2px 2px 4px rgba(0,0,0,.5);letter-spacing:1px}
+    .swiper-slide-caption h2 {font-size:3rem;font-weight:600;margin-bottom:1.5rem;text-shadow:2px 2px 4px rgba(0,0,0,.5)}
+    .swiper-slide-caption h3 {font-size:2rem;font-weight:500;margin-bottom:2rem;text-shadow:2px 2px 4px rgba(0,0,0,.5)}
+    .swiper-slide-caption h5 {font-size:1.5rem;font-weight:400;margin-bottom:1.5rem;text-shadow:2px 2px 4px rgba(0,0,0,.5);max-width:800px;margin-left:auto;margin-right:auto}
+    .button.button-primary {background-color:#2196F3;color:#fff;padding:15px 30px;border-radius:30px;text-transform:uppercase;font-weight:600;letter-spacing:1px;transition:all .3s ease;border:2px solid transparent}
+    .button.button-primary:hover {background-color:transparent;border-color:#2196F3;transform:translateY(-2px)}
+  </style>
+  <!--[if lt IE 10]>
+    <div style="background: #212121; padding: 10px 0; box-shadow: 3px 3px 5px 0 rgba(0,0,0,.3); clear: both; text-align:center; position: relative; z-index:1;"><a href="http://windows.microsoft.com/en-US/internet-explorer/"><img src="images/ie8-panel/warning_bar_0000_us.jpg" border="0" height="42" width="820" alt="You are using an outdated browser. For a faster, safer browsing experience, upgrade for free today."></a></div>
+    <script src="js/html5shiv.min.js"></script>
+  <![endif]-->
+</head>
+
+<body>
+  <div class="page">
+    <!-- ... (rest of your HTML code - unchanged except for the slider section below) ... -->
+    <section>
+      <div class="swiper-container swiper-slider swiper-slider_fullheight" data-simulate-touch="false" data-loop="false" data-autoplay="false">
+          <div class="swiper-wrapper">
+              <!-- ... (Swiper slides - only change is within the swiper-slide-caption divs) ... -->
+              <div class="swiper-slide swiper-slide-video">
+                  <video loop muted autoplay playsinline poster="images/i1.jpg">
+                      <source src="video/i1.webm" type="video/webm">
+                      Your browser does not support the video tag.
+                  </video>
+                  <div class="swiper-slide-caption">
+                      <div class="container">  </div>
+                      <div class="container">
+                          <h1 data-caption-animate="fadeInUpSmall">DanielMindTech</h1>
+                          <h3 data-caption-animate="fadeInUpSmall" data-caption-delay="200">Free Science Popularization</h3>
+                          <div class="group-lg group-middle">
+                              <a class="button button-primary" data-caption-animate="fadeInUpSmall" data-caption-delay="350" href="#section-see-features" data-custom-scroll-to="section-see-features">Learn More</a>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+
+
+              <div class="swiper-slide swiper-slide-video">
+                  <video loop muted autoplay playsinline poster="images/i2.jpg">
+                      <source src="video/i2.webm" type="video/webm">
+                      Your browser does not support the video tag.
+                  </video>
+                  <div class="swiper-slide-caption">
+                      <div class="container">
+                          <h2 data-caption-animate="fadeInLeftSmall">Explore Space, IT, Cybersecurity, Psychology & More</h2>
+                      </div>
+                  </div>
+              </div>
+
+
+              <div class="swiper-slide swiper-slide-video">
+                  <video loop muted autoplay playsinline poster="images/i3.jpg">
+                      <source src="video/i3.webm" type="video/webm">
+                      Your browser does not support the video tag.
+                  </video>
+                  <div class="swiper-slide-caption">
+                      <div class="container">
+                          <h2 data-caption-animate="fadeInUpSmall">Free Access to Knowledge</h2>
+                          <h5 class="text-width-2 block-centered" data-caption-animate="fadeInUpSmall" data-caption-delay="200">Ad-supported model for sustainable learning.</h5>
+                      </div>
+                  </div>
+              </div>
+
+          </div>
+          <div class="swiper-pagination"></div>
+          <div class="swiper-button-prev linear-icon-chevron-left"></div>
+          <div class="swiper-button-next linear-icon-chevron-right"></div>
+      </div>
+  </section>
+    <section class="section-xl bg-white text-center novi-background bg-cover" id="section-see-features">
+      <div class="container">
+        <div class="row row-fix justify-content-lg-center">
+          <div class="col-lg-10 col-xl-8">
+            <h3>Our Mission</h3>
+            <p>DanielMindTech provides free, ad-supported science popularization content to users across the
+              globe. We cover a wide range of topics, including Space, Information Technology, Cybersecurity,
+              Psychology, and many more. We utilize various platforms including X (formerly
+              Twitter), Facebook, Instagram, and independent websites to reach our audience and make learning
+              accessible.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="bg-gray-lighter object-wrap novi-background bg-cover">
+      <div class="section-xxl section-xxl_bigger">
+        <div class="container">
+          <div class="row row-fix">
+            <div class="col-lg-5">
+              <h3>Accessible Learning</h3>
+              <p>We strive to make learning accessible to everyone. Our free platform allows
+                users to explore a variety of scientific topics without any financial barriers. We believe
+                that knowledge should be freely available, and we're committed to providing high-quality
+                content to learners worldwide.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="object-wrap__body object-wrap__body-sizing-1 object-wrap__body-md-right bg-image novi-background custom-bg-image"
+        style="background-image: url(images/i1.webp)"></div>
+    </section>
+    <section class="section-xl bg-white novi-background bg-cover novi-background bg-cover">
+      <div class="container">
+        <div
+          class="row justify-content-md-center flex-lg-row-reverse align-items-lg-center justify-content-lg-between row-50">
+          <div class="col-md-9 col-lg-5">
+            <h3>Diverse Topics</h3>
+            <p>From the vast expanse of space to the intricacies of the human mind, we cover a diverse range of
+              scientific topics. Our content is designed to be engaging and informative, catering to both
+              beginners and those with a deeper interest in science. Explore our website and social media
+              channels to discover the fascinating world of science.</p>
+          </div>
+          <div class="col-md-9 col-lg-6"><img src="images/i4.webp" alt="" width="652" height="491" />
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="section-xl bg-gray-lighter novi-background bg-cover">
+      <div class="container">
+        <div class="row row-50">
+          <div class="col-md-6 col-lg-4">
+
+            <article class="blurb blurb-minimal">
+              <div class="unit flex-row unit-spacing-md">
+                <div class="unit-left">
+                  <div class="blurb-minimal__icon"><span class="novi-icon icon linear-icon-stars"></span></div>
+                </div>
+                <div class="unit-body">
+                  <p class="blurb__title">Space Exploration</p>
+                  <p>Journey with us through the cosmos as we delve into the mysteries of space, from the
+                    latest discoveries to the ongoing search for life beyond Earth.</p>
+                </div>
+              </div>
+            </article>
+          </div>
+          <div class="col-md-6 col-lg-4">
+
+            <article class="blurb blurb-minimal">
+              <div class="unit flex-row unit-spacing-md">
+                <div class="unit-left">
+                  <div class="blurb-minimal__icon"><span class="novi-icon icon linear-icon-laptop"></span>
+                  </div>
+                </div>
+                <div class="unit-body">
+                  <p class="blurb__title">Information Technology</p>
+                  <p>Stay up-to-date on the latest advancements in information technology, from artificial
+                    intelligence to cybersecurity and the ever-evolving digital landscape.</p>
+                </div>
+              </div>
+            </article>
+          </div>
+          <div class="col-md-6 col-lg-4">
+
+            <article class="blurb blurb-minimal">
+              <div class="unit flex-row unit-spacing-md">
+                <div class="unit-left">
+                  <div class="blurb-minimal__icon"><span class="novi-icon icon linear-icon-user"></span>
+                  </div>
+                </div>
+                <div class="unit-body">
+                  <p class="blurb__title">Psychology & More</p>
+                  <p>Explore the complexities of the human mind and delve into other fascinating areas of
+                    science, including health, environment, and the latest scientific breakthroughs.</p>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="section-xl bg-white novi-background bg-cover">
+      <div class="container">
+        <div class="row row-fix row-50 align-items-lg-center justify-content-lg-between">
+          <div class="col-lg-5">
+            <h3>Stay Informed</h3>
+            <p>Stay connected with us through our various platforms to receive the latest updates, engage in
+              discussions, and join a community of science enthusiasts. Follow us on X (formerly Twitter),
+              Facebook, and Instagram for daily doses of fascinating scientific content. Subscribe to our
+              newsletter for in-depth articles and exclusive insights.</p>
+          </div>
+          <div class="col-lg-6">
+            <div class="row gallery-wrap">
+              <div class="col-6"><img src="images/home-default-3-301x227.webp" alt="" width="301" height="227" />
+              </div>
+              <div class="col-6"><img src="images/home-default-4-301x227.webp" alt="" width="301" height="227" />
+              </div>
+              <div class="col-6"><img src="images/home-default-5-301x227.webp" alt="" width="301" height="227" />
+              </div>
+              <div class="col-6"><img src="images/home-default-6-301x227.webp" alt="" width="301" height="227" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="bg-gray-dark text-center">
+      <div class="parallax-container bg-image rd-parallax-light" data-parallax-img="images/community.webp">
+        <div class="parallax-content">
+          <div class="container section-xxl">
+            <h2>Join Our Community</h2>
+            <p>Connect with us on social media and subscribe to our newsletter to stay updated on the latest
+              scientific discoveries and engage with fellow science enthusiasts.</p><a class="button button-primary"
+              href="#">Connect Now</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="section-xl bg-white text-center novi-background bg-cover">
+      <div class="container">
+        <h3>Meet the Team</h3>
+        <div class="row row-50 offset-top-1">
+          <div class="col-md-6 col-lg-4">
+            <div class="thumb thumb-corporate">
+              <div class="thumb-corporate__main">
+                <img class="round-img" src="images/d.webp" alt="Daniel Xiao" width="150" height="150" style="border-radius: 50%; object-fit: cover;">
+                <div class="thumb-corporate__overlay">
+                  <ul class="list-inline-sm thumb-corporate__list">
+                    <li><a class="icon-sm fa-twitter icon novi-icon" href="https://x.com/xdanielf124"></a></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="thumb-corporate__caption">
+                <p class="thumb__title"><a href="https://x.com/xdanielf124">Daniel Xiao</a></p>
+                <p class="thumb__subtitle">CEO/Founder</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4">
+            <div class="thumb thumb-corporate">
+              <div class="thumb-corporate__main">
+                <img class="round-img" src="images/j.webp" alt="Jack Will" width="150" height="150" style="border-radius: 50%; object-fit: cover;">
+                <div class="thumb-corporate__overlay">
+                  <ul class="list-inline-sm thumb-corporate__list">
+                    <li><a class="icon-sm fa-twitter icon novi-icon" href="https://x.com/jackwill"></a></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="thumb-corporate__caption">
+                <p class="thumb__title"><a href="https://x.com/jackwill">Jack Will</a></p>
+                <p class="thumb__subtitle">Web/App Engineer</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4">
+            <div class="thumb thumb-corporate">
+              <div class="thumb-corporate__main">
+                <img class="round-img" src="images/a.webp" alt="Anne Clays" width="150" height="150" style="border-radius: 50%; object-fit: cover;">
+                <div class="thumb-corporate__overlay">
+                  <ul class="list-inline-sm thumb-corporate__list">
+                    <li><a class="icon-sm fa-twitter icon novi-icon" href="https://x.com/aanne"></a></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="thumb-corporate__caption">
+                <p class="thumb__title"><a href="https://x.com/aanne">Anne Clays</a></p>
+                <p class="thumb__subtitle">Marketing Expert</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="section-lg bg-gray-lighter novi-background bg-cover text-center">
+      <div class="container">
+        <h3>What People Are Saying</h3>
+
+        <div class="owl-carousel owl-carousel-spacing-1" data-autoplay="true" data-items="1" data-stage-padding="15"
+          data-loop="true" data-margin="30" data-nav="true">
+          <div class="item">
+
+            <div class="quote-default">
+              <div class="quote-default-icon icon novi-icon linear-icon-quote-open"></div>
+              <div class="quote-default__text">
+                <p class="q">DanielMindTech is a valuable resource for anyone interested in science. The
+                  content is well-researched, engaging, and accessible to a wide audience. I
+                  appreciate
+                  the platform's commitment to free education.</p>
+              </div>
+              <p class="quote-default__cite">John Doe</p>
+            </div>
+          </div>
+          <div class="item">
+
+            <div class="quote-default">
+              <div class="quote-default-icon icon novi-icon linear-icon-quote-open"></div>
+              <div class="quote-default__text">
+                <p class="q">I love how DanielMindTech covers such a diverse range of scientific topics.
+                  It's
+                  a one-stop shop for all things science, and I always learn something new. The
+                  platform is also incredibly user-friendly.</p>
+              </div>
+              <p class="quote-default__cite">Emily Smith</p>
+            </div>
+          </div>
+          <div class="item">
+
+            <div class="quote-default">
+              <div class="quote-default-icon icon novi-icon linear-icon-quote-open"></div>
+              <div class="quote-default__text">
+                <p class="q">DanielMindTech is my go-to source for the latest scientific news and
+                  discoveries. The content is presented in a clear and concise manner, making it easy
+                  to
+                  understand complex topics. I highly recommend this platform to anyone passionate
+                  about
+                  science.</p>
+              </div>
+              <p class="quote-default__cite">David Lee</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="section-xl bg-white text-center novi-background bg-cover">
+      <div class="container">
+        <h5>Stay Updated with the Latest Science News</h5>
+        <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSc0lA3IaltPRn6AHjAxSJ7ncfYYoHX8xUQz36br9Ymk4NKWJw/viewform?embedded=true" width="640" height="553" frameborder="0" marginheight="0" marginwidth="0">正在加载…</iframe>
+    </section>
+    <section class="pre-footer-corporate novi-background bg-cover">
+      <div class="container">
+        <div class="row row-30 row-md-60 py-3 py-md-5">  <!-- Added padding -->
+          <div class="col-sm-10 col-md-6 col-lg-4">
+            <h6>About Us</h6>
+            <p>DanielMindTech is a platform dedicated to providing free and accessible science popularization content. We cover a wide range of topics, making learning engaging and informative for everyone.</p>
+          </div>
+          <div class="col-sm-10 col-md-6 col-lg-4">
+            <h6>Contact Us</h6>
+            <ul class="list-xs">
+              <li>
+                <dl class="list-terms-minimal">
+                  <dt>Address</dt>
+                  <dd>Hong Kong</dd>
+                </dl>
+              </li>
+              <li>
+                <dl class="list-terms-minimal">
+                  <dt>Email</dt>
+                  <dd><a href="mailto:social.contact@danielmind.tech">social.contact@danielmind.tech</a></dd>
+                </dl>
+              </li>
+              <li>
+                <dl class="list-terms-minimal">
+                  <dt>Social Media</dt>
+                  <dd>
+                    <ul class="list-inline-xxs">
+                      <li><a class="novi-icon icon icon-xxs icon-primary fa fa-twitter" href="https://x.com/DanielMindTech"></a></li>
+                      <li><a class="novi-icon icon icon-xxs icon-primary fa fa-facebook" href="https://facebook.com/DanielMindTech"></a></li>
+                      <li><a class="novi-icon icon icon-xxs icon-primary fa fa-instagram" href="https://instagram.com/DanielMindTech"></a></li>
+                    </ul>
+                  </dd>
+                </dl>
+              </li>
+            </ul>
+          </div>
+          <div class="col-sm-10 col-lg-4">
+            <h6>Explore</h6>
+            <ul class="list-xxs">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="about.html">About Us</a></li>
+              <li><a href="topics.html">Topics</a></li>
+              <li><a href="team.html">Team</a></li>
+              <li><a href="blog.html">Blog</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer class="footer-corporate novi-background bg-cover">
+      <div class="container">
+        <div class="footer-corporate__inner">
+          <p class="rights"><span>DanielMindTech</span><span> </span><span class="copyright-year"></span>. All rights
+            reserved.</p>
+          <ul class="list-inline-xxs">
+            <li><a class="novi-icon icon icon-xxs icon-primary fa fa-twitter" href="https://x.com/DanielMindTech"></a>
+            </li>
+            <li><a class="novi-icon icon icon-xxs icon-primary fa fa-facebook"
+                href="https://facebook.com/DanielMindTech"></a></li>
+            <li><a class="novi-icon icon icon-xxs icon-primary fa fa-instagram"
+                href="https://instagram.com/DanielMindTech"></a></li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+  </div>
+
+  <div class="snackbars" id="form-output-global"></div>
+
+  <script src="js/core.min.js"></script>
+  <script src="js/script.js"></script>
+</body>
+
+</html>
